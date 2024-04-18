@@ -1,10 +1,19 @@
-const helloWorldRegex = (str) => {};
+// tai
+const helloWorldRegex = (str) => {
+  return /hello world/i.test(str); 
+};
 
-const hasAVowel = (str) => {};
+const hasAVowel = (str) => {
+  return /[aeiou]/gi.test(str);
+};
 
-const hasCatsOrDogs = (str) => {};
+const hasCatsOrDogs = (str) => {
+  return /cats|dogs/i.test(str);
+};
 
-const hasVowelStart = (str) => {};
+const hasVowelStart = (str) => {
+  return /^a|e|i|o|u/i.test(str);
+};
 
 const hasPunctuationEnd = (str) => {};
 
