@@ -88,13 +88,26 @@ const matchAllNumbers = (str) => {
     return str.match(regexp)||[];
 };
   
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbersAsNumbers = (str) => {
+    let arr = str.match(/\d+/g) || [];
+    return arr.map(Number);
+        // converts element of arr of strings to numbers
+        // Number is a built in JS function that converts its argument to a number
+};
   
-const matchAllWords = (str) => {};
+const matchAllWords = (str) => {
+    return str.match(/[a-zA-Z']+/g) || [];
+};
   
-const replaceAllNumbers = (str) => {};
+const replaceAllNumbers = (str) => {
+    let regex = /\d+/g;
+    return str.replace(regex, "???"); 
+};
   
-const fixFileName = (str) => {};
+const fixFileName = (str) => {
+    let regex = /\s+/g;
+    return str.replace(regex, "_");
+};
   
 const nameRedacter = (str) => {};
   

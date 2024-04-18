@@ -36,18 +36,25 @@ const isValidPhoneNumber = (str) => {
 };
 
 const matchAllNumbers = (str) => {
-  return str.match(/\d+/g)||[];
+  return str.match(/\d+/g) || [];
 };
 
 const matchAllNumbersAsNumbers = (str) => {
-
+  let arr = str.match(/\d+/g) || [];
+  return arr.map(Number);
 };
 
-const matchAllWords = (str) => {};
+const matchAllWords = (str) => {
+  return str.match(/[a-zA-Z']+/g) || [];
+};
 
-const replaceAllNumbers = (str) => {};
+const replaceAllNumbers = (str) => {
+  return str.replace(/\d+/g, "???"); 
+};
 
-const fixFileName = (str) => {};
+const fixFileName = (str) => {
+  return str.replace(/\s+/g, "_");
+};
 
 const nameRedacter = (str) => {};
 
