@@ -56,9 +56,13 @@ const fixFileName = (str) => {
   return str.replace(/\s+/g, "_");
 };
 
-const nameRedacter = (str) => {};
+const nameRedacter = (str) => {
+  return str.replace(/w+[A-Z^IA]+/g, "REDACTED");
+};
 
-const camelToSnakeCase = (str) => {};
+const camelToSnakeCase = (str) => {
+
+};
 
 module.exports = {
   helloWorldRegex,
