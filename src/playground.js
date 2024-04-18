@@ -22,8 +22,11 @@ const hasVowelStart = (str) => {
 };
 // console.log(hasVowelStart("ba"))
   
-  
-const hasPunctuationEnd = (str) => {};
+const hasPunctuationEnd = (str) => {
+    return /[^\w\s]$/.test(str);
+};
+
+console.log(hasPunctuationEnd("a."))
   
 const hasNothingOrDigits = (str) => {};
   

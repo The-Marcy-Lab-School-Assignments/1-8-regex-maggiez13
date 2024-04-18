@@ -15,7 +15,9 @@ const hasVowelStart = (str) => {
   return /^a|e|i|o|u/i.test(str);
 };
 
-const hasPunctuationEnd = (str) => {};
+const hasPunctuationEnd = (str) => {
+  return /[^\w\s]$/.test(str);
+};
 
 const hasNothingOrDigits = (str) => {};
 
