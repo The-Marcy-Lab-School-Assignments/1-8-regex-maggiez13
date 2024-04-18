@@ -23,12 +23,18 @@ const hasVowelStart = (str) => {
 // console.log(hasVowelStart("ba"))
   
 const hasPunctuationEnd = (str) => {
+    // negating word characters and space characters 
     return /[^\w\s]$/.test(str);
 };
 
-console.log(hasPunctuationEnd("a."))
+// console.log(hasPunctuationEnd("a."))
   
-const hasNothingOrDigits = (str) => {};
+const hasNothingOrDigits = (str) => {
+    return /^(\s*|\d+)$/.test(str);
+    // 
+};
+
+console.log(hasNothingOrDigits("abc"))
   
 const hasNoFlippers = (str) => {};
   

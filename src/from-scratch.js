@@ -19,7 +19,9 @@ const hasPunctuationEnd = (str) => {
   return /[^\w\s]$/.test(str);
 };
 
-const hasNothingOrDigits = (str) => {};
+const hasNothingOrDigits = (str) => {
+  return /^(\s*|\d+)$/.test(str);
+};
 
 const hasNoFlippers = (str) => {};
 
