@@ -16,22 +16,32 @@ const hasVowelStart = (str) => {
 };
 
 const hasPunctuationEnd = (str) => {
-  return /[^\w\s]$/.test(str);
+  return /[?.!]$/.test(str);
 };
 
 const hasNothingOrDigits = (str) => {
-  return /^(\s*|\d+)$/.test(str);
+  return /^(\s*|\d*)$/.test(str);
 };
 
-const hasNoFlippers = (str) => {};
+const hasNoFlippers = (str) => {
+  return /^[^BCcDEHIKOoXxl]*$/.test(str);
+};
 
-const isValidEmail = (str) => {};
+const isValidEmail = (str) => {
+  return /^[a-zA-z0-9_.]+@[a-z]+\.[a-z]{2,3}$/.test(str);
+};
 
-const isValidPhoneNumber = (str) => {};
+const isValidPhoneNumber = (str) => {  
+  return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]+[0-9]{3}[-\s\.]+[0-9]{4}$/.test(str);
+};
 
-const matchAllNumbers = (str) => {};
+const matchAllNumbers = (str) => {
+  return str.match(/\d+/g)||[];
+};
 
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbersAsNumbers = (str) => {
+
+};
 
 const matchAllWords = (str) => {};
 
