@@ -61,7 +61,7 @@ const nameRedacter = (str) => {
 };
 
 const camelToSnakeCase = (str) => {
-  callback = ((letter) => `_${letter.toLowerCase()}`);
+  const callback = ((letter) => `_${letter.toLowerCase()}`);
   return str.replaceAll(/[A-Z]/g, callback);
 };
 
