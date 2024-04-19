@@ -120,7 +120,7 @@ const camelToSnakeCase = (str) => {
     return str.replaceAll(/[A-Z]/g, callback);
 };
 
-// modify.js
+// modify.js -> original given code 
 // const swapAllCases = (str) => {
 //   let result = '';
 //   for (let i = 0; i < str.length; i++) {
@@ -128,8 +128,18 @@ const camelToSnakeCase = (str) => {
 //     const isUppercaseLetter = char === char.toUpperCase();
 //     result += isUppercaseLetter ? char.toLowerCase() : char.toUpperCase();
 //   }
-
 //   return result;
+// };
+// modify.js -> solution 
+// const swapAllCases = (str) => {
+//     const callback = (letter) => {
+//       if (/[a-z]/.test(letter)) {
+//         return letter.toUpperCase()
+//       } else if (/[A-Z]/.test(letter)) {
+//         return letter.toLowerCase()
+//       }
+//     };
+//     return str.replaceAll(/[a-zA-Z]/g, callback)
 // };
   
 module.exports = {

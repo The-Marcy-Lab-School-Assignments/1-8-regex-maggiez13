@@ -1,5 +1,5 @@
 const swapAllCases = (str) => {
-  callback = ((letter) => `${letter.toLowerCase()}` ? `${letter.toUpperCase()}`: letter);
+  const callback = ((letter) => /[a-z]/.test(letter) ? letter.toUpperCase(): letter.toLowerCase());
   return str.replaceAll(/[a-zA-Z]/g, callback);
 };
 

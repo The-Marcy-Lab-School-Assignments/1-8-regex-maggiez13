@@ -22,7 +22,7 @@
       "FrScTe16": 1
     },
     "Modify Tests": {
-      "MoTe1": 0
+      "MoTe1": 1
     }
   },
   "idToTestNameHash": {
@@ -67,8 +67,8 @@
   },
   "humanReadable": {
     "Debug Tests": "1/1",
-    "finalTestScore": "FINAL SCORE: 17/18",
+    "finalTestScore": "FINAL SCORE: 18/18",
     "From Scratch Tests": "16/16",
-    "Modify Tests": "0/1"
+    "Modify Tests": "1/1"
   }
 }
