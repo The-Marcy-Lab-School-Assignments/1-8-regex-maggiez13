@@ -57,11 +57,12 @@ const fixFileName = (str) => {
 };
 
 const nameRedacter = (str) => {
-  return str.replace(/w+[A-Z^IA]+/g, "REDACTED");
+  return str.replace(/\w[B-Z^IA]+/g, "REDACTED");
 };
 
 const camelToSnakeCase = (str) => {
-
+  callback = ((letter) => `_${letter.toLowerCase()}`);
+  return str.replaceAll(/[A-Z]/g, callback);
 };
 
 module.exports = {

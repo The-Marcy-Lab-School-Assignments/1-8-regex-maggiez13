@@ -109,9 +109,16 @@ const fixFileName = (str) => {
     return str.replace(regex, "_");
 };
   
-const nameRedacter = (str) => {};
+const nameRedacter = (str) => {
+    return str.replace(/w+[B-Z^IA]+/g, "REDACTED");
+        // `\w+`: matches one or more word characters
+        // `[B-Z^IA]+`: matches one or more characters that are either uppercase or not the letters I and A
+};
   
-const camelToSnakeCase = (str) => {};
+const camelToSnakeCase = (str) => {
+    callback = ((letter) => `_${letter.toLowerCase()}`);
+    return str.replaceAll(/[A-Z]/g, callback);
+};
   
 module.exports = {
     helloWorldRegex,
