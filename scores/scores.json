@@ -1,7 +1,7 @@
 {
   "testScores": {
     "Debug Tests": {
-      "DeTe1": 0
+      "DeTe1": 1
     },
     "From Scratch Tests": {
       "FrScTe1": 1,
@@ -66,8 +66,8 @@
     "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1"
   },
   "humanReadable": {
-    "Debug Tests": "0/1",
-    "finalTestScore": "FINAL SCORE: 16/18",
+    "Debug Tests": "1/1",
+    "finalTestScore": "FINAL SCORE: 17/18",
     "From Scratch Tests": "16/16",
     "Modify Tests": "0/1"
   }
